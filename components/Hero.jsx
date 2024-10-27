@@ -11,7 +11,7 @@ const Hero = () => {
           More than just shorter links
         </span>
         <span className="text-lg text-gray-700 ">
-          Build your brand's recognition and get detailed insights on how your
+          Build your brand&apos;s recognition and get detailed insights on how your
           links are performing
         </span>
         <GetStartedButton text="Get Started" />
