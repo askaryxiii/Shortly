@@ -12,6 +12,9 @@ const CopyButton = ({ result }) => {
     <Button
       onClick={() => {
         copylink(), setCopy(true);
+        setTimeout(() => {
+          setCopy(false);
+        }, "3000");
       }}
       className={`${
         copy ? "bg-purple" : "bg-button"
