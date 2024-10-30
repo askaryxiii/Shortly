@@ -20,7 +20,7 @@ const Stepper = () => {
             </p>
           </div>
           <p className="text-sm text-gray-600">
-            Boost your brand recognition with each click. Generic links don&apos;t
+            Boost your brand recognition with each click. Generic links don't
             mean a thing. Branded links help instil confidence in your content.
             Detailed Records
           </p>

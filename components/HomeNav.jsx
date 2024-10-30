@@ -16,12 +16,12 @@ import {
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-row justify-evenly gap-2 lg:mb-0 lg:mt-0 lg:items-center lg:gap-6">
+    <ul className="my-2 flex lg:flex-row flex-col justify-evenly gap-2 lg:mb-0 lg:mt-0 mt-3 py-5 lg:py-0 bg-purple lg:bg-transparent  rounded-lg items-center lg:gap-6">
       <Typography
         as={Link}
         href="/"
         variant="paragraph"
-        className="p-1 font-semibold text-gray-700"
+        className="p-1 font-semibold  lg:text-gray-700 text-white"
       >
         Home
       </Typography>
@@ -29,7 +29,7 @@ function NavList() {
         as={Link}
         href="/"
         variant="paragraph"
-        className="p-1 font-semibold text-gray-700"
+        className="p-1 font-semibold lg:text-gray-700 text-white"
       >
         Pricing
       </Typography>
@@ -37,7 +37,7 @@ function NavList() {
         as={Link}
         href="/"
         variant="paragraph"
-        className="p-1 font-semibold text-gray-700"
+        className="p-1 font-semibold lg:text-gray-700 text-white"
       >
         About
       </Typography>

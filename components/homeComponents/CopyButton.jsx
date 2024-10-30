@@ -18,7 +18,7 @@ const CopyButton = ({ result }) => {
       }}
       className={`${
         copy ? "bg-purple" : "bg-button"
-      } w-fit h-fit rounded-md px-5 py-2 shadow-none hover:shadow-none focus:shadow-none`}
+      } lg:w-fit w-full h-fit rounded-md px-5 py-2 shadow-none hover:shadow-none focus:shadow-none`}
     >
       {copy ? "Copied!" : "Copy"}
     </Button>

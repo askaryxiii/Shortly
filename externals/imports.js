@@ -18,7 +18,6 @@ import Image from "next/image";
 import logo from "@/public/logo.svg";
 import working from "@/public/working.svg";
 import axios from "axios";
-import { useRouter } from "next/navigation";
 
 export {
   ThemeProvider,
@@ -40,5 +39,4 @@ export {
   BsSpeedometer2,
   HiOutlinePaintBrush,
   axios,
-  useRouter,
 };

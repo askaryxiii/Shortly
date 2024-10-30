@@ -19,7 +19,6 @@ module.exports = withMT({
         foreground: "var(--foreground)",
         button: "#2bd1d1",
         purple: "#3a3053",
-        secondaryBG: "#f0f1f6",
       },
     },
   },

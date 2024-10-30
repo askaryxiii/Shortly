@@ -1,19 +1,20 @@
-export const getShortURL = async () => {
-  const data = {
-    url: "https://dev.to/rashidshamloo/api-data-fetching-in-react-nextjs-289d",
-  };
+export const getShortURL = async (myUrl) => {
+  const url = myUrl;
+
   try {
-    const response = await fetch("https://spoo.me/", {
+    const res = await fetch("https://spoo.me/", {
       method: "POST",
       headers: {
-        "content-type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded",
         Accept: "application/json",
       },
-      body: JSON.stringify(data),
+      body: new URLSearchParams({
+        url: url,
+      }),
     });
-    const res = await response.json();
-    console.log(res);
+    const { short_url } = await res.json();
+    return short_url;
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
