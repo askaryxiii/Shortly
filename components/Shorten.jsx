@@ -5,9 +5,11 @@ import { getShortURL } from "./logic/GetShortURL";
 import CopyButton from "./homeComponents/CopyButton";
 
 const Shorten = () => {
-  const [result, setResult] = useState("");
-  const [value, setValue] = useState("");
-  const [err, setErr] = useState(true);
+  // const [result, setResult] = useState("");
+  // const [value, setValue] = useState(
+  //   "https://dev.to/rashidshamloo/api-data-fetching-in-react-nextjs-289d"
+  // );
+  // const [err, setErr] = useState(true);
   return (
     <div className="w-full flex flex-col bg-gradient-to-b from-transparent to-secondaryBG  items-center">
       <div className="flex flex-col w-3/4 rounded-lg gap-5 justify-center">
@@ -17,29 +19,25 @@ const Shorten = () => {
           <div className="flex lg:flex-row flex-col w-full gap-8">
             <Input
               type="text"
-              onChange={(key) => {
-                setValue(key.target.value), setErr(true);
-              }}
+              onChange={(key) => {}}
               placeholder="Shorten a link here"
-              className={`!border ${
-                err
-                  ? "!border-gray-300 placeholder:text-gray-500"
-                  : "!border-red-500 placeholder:text-red-500"
-              } bg-white text-gray-900 shadow-none placeholder:opacity-100`}
+              // className={`!border ${
+              //   err
+              //     ? "!border-gray-300 placeholder:text-gray-500"
+              //     : "!border-red-500 placeholder:text-red-500"
+              // } bg-white text-gray-900 shadow-none placeholder:opacity-100`}
               labelProps={{
                 className: "hidden",
               }}
             />
             <Button
-              onClick={() =>
-                value ? setResult(getShortURL(value)) : setErr(false)
-              }
+              onClick={() => getShortURL()}
               className="bg-button lg:w-1/5 w-fit text-white focus:shadow-none hover:shadow-none shadow-none"
             >
               Shorten it!
             </Button>
           </div>
-          <Typography
+          {/* <Typography
             variant="small"
             color="red"
             className={`${
@@ -47,10 +45,10 @@ const Shorten = () => {
             } mt-2 items-center gap-1 font-medium`}
           >
             Please add a link.
-          </Typography>
+          </Typography> */}
         </div>
 
-        {result && (
+        {/* {result && (
           <div className="flex flex-col w-full lg:flex-row gap-3 justify-between items-center rounded-md bg-white px-6 py-3">
             <span className="text-base text-gray-700">
               {value?.slice(0, 50)}...
@@ -67,7 +65,7 @@ const Shorten = () => {
               <CopyButton result={result} />
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
